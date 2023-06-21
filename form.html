@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="recebedados.java" method="post">
+        Nome: <input type="text" placeholder="Digite seu nome" name="nome" id=""><br>
+        Email: <input type="email" name="" id=""><br>
+        Senha: <input type="password" name="senha"><br>
+        Cor: <input type="color" name="" id=""><br>
+        Data de Nascimento: <input type="date"><br>
+        
+        Sexo: <br> 
+        <input type="radio" name="sexo">Feminino<br>
+        <input type="radio" name="sexo">Feminino<br>
+        
+        Disciplinas: <br>
+        A<input type="checkbox" name="a">
+        B<input type="checkbox" name="b">
+        C<input type="checkbox" name="c"> <br>
+        
+        Escolha o Estado: <br>
+        <select name="estado" id="">
+            <option value="df">DF</option>
+            <option value="rj">RJ</option>
+            <option value="sp">SP</option>
+        </select> <br>
+
+        Observações: <br>
+        <textarea name="" id="" cols="30" rows="10">
+
+        </textarea> <br>
+
+        <input type="submit" onclick="recebedados()" value="Cadastrar">
+
+    </form>
+</body>
+</html>

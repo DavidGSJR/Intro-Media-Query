@@ -1,0 +1,72 @@
+h1{
+    color: red;
+    font-size: 100px;
+}
+#img img{
+    width: 50vw; /* View Port*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.column{
+    float: left;
+    width: 23%;
+}
+
+/* Aplicar a formatação responsiva atraves de Media Queries */
+
+@media screen and (max-width:696px){
+h1{
+    color: green;
+    background-color: yellow;
+    font-size: 20px;
+}
+body{
+    background-color: aqua;
+}
+.row{
+    display: inline;
+    justify-content: center;
+}
+.column{
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#img img{
+    display: none;
+}
+}
+
+@media screen and (min-width:697px) and (max-width:1024px){
+    h1{
+        color: pink;
+        font-size: 50px;
+    }
+    body{
+        background-color: blue;
+    }
+    .row{
+        display: inline;
+        justify-content: center;
+    }
+    .column{
+        float: left;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width:1025px){
+    h1{
+        color: chartreuse;
+        background-color: darkgray;
+        font-size: 70px;
+    }
+    body{
+        background-color: darkviolet;
+    }
+}
